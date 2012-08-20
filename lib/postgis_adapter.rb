@@ -221,7 +221,7 @@ ActiveRecord::ConnectionAdapters::PostgreSQLAdapter.class_eval do
   def add_index(table_name, column_name, options = {})
     index_name = options[:name] || index_name(table_name,:column => Array(column_name))
     if options[:spatial]
-      execute "CREATE INDEX #{index_name} ON #{table_name} USING GIST (#{Array(column_name).join(", ")} GIST_GEOMETRY_OPS)"
+      execute "CREATE INDEX #{index_name} ON #{table_name} USING GIST (#{Array(column_name).join(", ")})"
     else
       super
     end
