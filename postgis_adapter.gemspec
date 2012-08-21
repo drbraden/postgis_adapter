@@ -1,10 +1,10 @@
 Gem::Specification.new do |spec|
   spec.name     = 'postgis_adapter'
-  spec.version  = '0.8.1'
-  spec.authors  = ['Marcos Piccinini']
-  spec.summary  = 'PostGIS Adapter for Active Record'
-  spec.email    = 'x@nofxx.com'
-  spec.homepage = 'http://github.com/nofxx/postgis_adapter'
+  spec.version  = '0.8.1-pre'
+  spec.authors  = ['Doug Braden']
+  spec.summary  = 'PostGIS 2.0 Adapter for Active Record'
+  spec.email    = 'noemail@example.com'
+  spec.homepage = 'http://github.com/drbraden/postgis_adapter'
 
   spec.rdoc_options = ['--charset=UTF-8']
   spec.rubyforge_project = 'postgis_adapter'
